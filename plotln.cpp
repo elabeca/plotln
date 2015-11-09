@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 
     string input = "";
     cout << "Please enter your lines coordinates (i.e. (x,y) – (x,y), (x,y) – (x,y), ...)" << endl;
-    cout << "whilst ensuring not to exceed the following bounderies:  x = [1 to 19] and y = [1 to 9]:" << endl;
+    cout << "whilst ensuring not to exceed the following boundaries:  x = [1 to 19] and y = [1 to 9]:" << endl;
     getline(cin, input);
 
     // Regex pattern matching on line coordinates irrespective of space or tabs
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     if (match_count == 0) {
         cout << "Oops! seems you're missing at least one line coordinates!" << endl;
         cout << "Please try again with the following format: (3,4)-(9,19),etc." << endl;
-        cout << "whilst ensuring not to exceed the following bounderies:  x = [0 to 19] and y = [0 to 9]" << endl;
+        cout << "whilst ensuring not to exceed the following boundaries:  x = [0 to 19] and y = [0 to 9]" << endl;
         exit(-1);
     }
 
